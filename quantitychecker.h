@@ -2,6 +2,7 @@
 #define QUANTITYCHECKER_H
 
 #include <QDialog>
+#include "addentry.h"
 
 namespace Ui {
 class QuantityChecker;
@@ -22,6 +23,7 @@ private slots:
 
 private:
     Ui::QuantityChecker *ui;
+    AddEntry *addentry;
 };
 
 #endif // QUANTITYCHECKER_H

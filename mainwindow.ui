@@ -279,8 +279,8 @@
      <rect>
       <x>200</x>
       <y>120</y>
-      <width>401</width>
-      <height>451</height>
+      <width>402</width>
+      <height>421</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -289,10 +289,13 @@
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>40</height>
+         <height>30</height>
         </size>
        </property>
       </spacer>
@@ -506,7 +509,9 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <family>Segoe UI Symbol</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
         </font>
        </property>
        <property name="cursor">
@@ -528,10 +533,13 @@
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>40</height>
+         <height>30</height>
         </size>
        </property>
       </spacer>
@@ -745,7 +753,9 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <family>Segoe UI Symbol</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
         </font>
        </property>
        <property name="cursor">
@@ -764,10 +774,13 @@
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>40</height>
+         <height>30</height>
         </size>
        </property>
       </spacer>
@@ -981,7 +994,9 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <family>Segoe UI Symbol</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
         </font>
        </property>
        <property name="cursor">
@@ -1000,10 +1015,13 @@
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>40</height>
+         <height>30</height>
         </size>
        </property>
       </spacer>

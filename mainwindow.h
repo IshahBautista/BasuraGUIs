@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "throwwindow.h"
+#include "garbagenotif.h"
+#include "capacitystatus.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,8 +23,14 @@ public:
 private slots:
     void on_THROW_clicked();
 
+    void on_CAPACITY_clicked();
+
+    void on_NOTIFY_clicked();
+
 private:
     Ui::MainWindow *ui;
-    throwWindow *throwwindow;
+    throwWindow *throwwindow; //to open throwwindow
+    GarbageNotif *garbagenotif; //to open garbage notif
+    CapacityStatus *capacitystatus; //to open capacity status
 };
 #endif // MAINWINDOW_H

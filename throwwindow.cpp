@@ -1,12 +1,14 @@
 #include "throwwindow.h"
 #include "ui_throwwindow.h"
 #include "mainwindow.h"
+#include <QScreen>
 
 throwWindow::throwWindow(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::throwWindow)
 {
     ui->setupUi(this);
+    move(QGuiApplication::screens().at(0)->geometry().center() - frameGeometry().center());
 }
 
 throwWindow::~throwWindow()
