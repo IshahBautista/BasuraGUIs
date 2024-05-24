@@ -17,9 +17,9 @@ public:
     ~Review();
 
 private slots:
-    void on_BACK5_clicked();
-
     void on_NEXT3_clicked();
+
+    void on_makechanges_clicked();
 
 private:
     Ui::Review *ui;

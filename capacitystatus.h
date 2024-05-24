@@ -18,8 +18,17 @@ public:
 private slots:
     void on_BACKcapacity_clicked();
 
+    void updateCapacity();
+
 private:
     Ui::CapacityStatus *ui;
+
+private:
+    void updateWarnings();
+
+private:
+    void ColorProgress();
 };
+
 
 #endif // CAPACITYSTATUS_H

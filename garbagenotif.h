@@ -2,6 +2,7 @@
 #define GARBAGENOTIF_H
 
 #include <QDialog>
+#include "verifynotification.h"
 
 namespace Ui {
 class GarbageNotif;
@@ -18,8 +19,15 @@ public:
 private slots:
     void on_BACKnotif_clicked();
 
+    void on_BIOnotify_clicked();
+
+    void on_NONBIOnotify_clicked();
+
+    void on_RECYCnotify_clicked();
+
 private:
     Ui::GarbageNotif *ui;
+    VerifyNotification *verifynotification;
 };
 
 #endif // GARBAGENOTIF_H

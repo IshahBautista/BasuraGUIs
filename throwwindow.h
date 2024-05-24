@@ -2,7 +2,7 @@
 #define THROWWINDOW_H
 
 #include <QDialog>
-#include "containerchoose.h"
+#include "contquant.h"
 
 namespace Ui {
 class throwWindow;
@@ -27,7 +27,8 @@ private slots:
 
 private:
     Ui::throwWindow *ui;
-    ContainerChoose *containerchoose;
+    ContQuant *contquant;
+    QString garbageType; // Variable to store garbage type
 };
 
 #endif // THROWWINDOW_H

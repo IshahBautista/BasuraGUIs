@@ -24,13 +24,18 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         throwwindow.h throwwindow.cpp throwwindow.ui
-        containerchoose.h containerchoose.cpp containerchoose.ui
-        quantitychecker.h quantitychecker.cpp quantitychecker.ui
+
+
         addentry.h addentry.cpp addentry.ui
         review.h review.cpp review.ui
         verifypopup.h verifypopup.cpp verifypopup.ui
         capacitystatus.h capacitystatus.cpp capacitystatus.ui
         garbagenotif.h garbagenotif.cpp garbagenotif.ui
+        successsubmit.h successsubmit.cpp successsubmit.ui
+        verifynotification.h verifynotification.cpp verifynotification.ui
+        notifysuccess.h notifysuccess.cpp notifysuccess.ui
+        loginpage.h loginpage.cpp loginpage.ui
+        contquant.h contquant.cpp contquant.ui
 
     )
 # Define target properties for Android with Qt 6 as:

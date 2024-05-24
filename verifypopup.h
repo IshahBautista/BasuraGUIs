@@ -2,6 +2,7 @@
 #define VERIFYPOPUP_H
 
 #include <QDialog>
+#include "successsubmit.h"
 
 namespace Ui {
 class VerifyPopUp;
@@ -22,6 +23,7 @@ private slots:
 
 private:
     Ui::VerifyPopUp *ui;
+    SuccessSubmit *successsubmit;
 };
 
 #endif // VERIFYPOPUP_H

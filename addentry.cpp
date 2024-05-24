@@ -2,10 +2,12 @@
 #include "ui_addentry.h"
 #include "mainwindow.h"
 #include "throwwindow.h"
-#include "containerchoose.h"
-#include "quantitychecker.h"
 #include "review.h"
+#include "loginpage.h"
 #include <QSCreen>
+#include <QMessageBox>
+#include <QFile>
+#include <QTextStream>
 
 AddEntry::AddEntry(QWidget *parent)
     : QDialog(parent)
@@ -22,8 +24,12 @@ AddEntry::~AddEntry()
 
 void AddEntry::on_Cancel_clicked()
 {
+    QString datafilePath = LoginPage::globalFolderPath + "/datafile.txt";
+    QFile datafile(datafilePath);
+    datafile.remove();
+
     close();
-    QWidget *home = this->parentWidget()->parentWidget()->parentWidget()->parentWidget(); //takes you to homepage, the great great great ancestor of the widget
+    QWidget *home = this->parentWidget()->parentWidget(); //takes you to homepage, the great great great ancestor of the widget
     home->show();
 }
 
@@ -31,8 +37,16 @@ void AddEntry::on_Cancel_clicked()
 void AddEntry::on_Submitother_clicked()
 {
     close();
-    QWidget *submitNew = this->parentWidget()->parentWidget()->parentWidget();
+    QWidget *submitNew = this->parentWidget()->parentWidget();
     submitNew->show();
+
+    QString datafilePath = LoginPage::globalFolderPath + "/datafile.txt";
+    QFile datafile(datafilePath);
+
+    if(datafile.open(QIODevice::Append | QIODevice::ReadWrite)) {
+        QTextStream newline(&datafile);
+        newline << "\n";
+    }
 }
 
 

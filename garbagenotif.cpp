@@ -1,5 +1,6 @@
 #include "garbagenotif.h"
 #include "ui_garbagenotif.h"
+#include "verifynotification.h"
 #include <QScreen>
 
 GarbageNotif::GarbageNotif(QWidget *parent)
@@ -20,5 +21,26 @@ void GarbageNotif::on_BACKnotif_clicked()
     close();
     QWidget *parent = this->parentWidget();
     parent->show();
+}
+
+
+void GarbageNotif::on_BIOnotify_clicked()
+{
+    verifynotification = new VerifyNotification(this);
+    verifynotification->show();
+}
+
+
+void GarbageNotif::on_NONBIOnotify_clicked()
+{
+    verifynotification = new VerifyNotification(this);
+    verifynotification->show();
+}
+
+
+void GarbageNotif::on_RECYCnotify_clicked()
+{
+    verifynotification = new VerifyNotification(this);
+    verifynotification->show();
 }
 
